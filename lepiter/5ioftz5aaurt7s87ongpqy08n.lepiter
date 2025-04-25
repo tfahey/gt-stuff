@@ -1,0 +1,447 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-01-29T13:54:50.601085-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-02-04T14:28:16.835146-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "p77HlD7pDQCfJ3YJDls4XQ=="
+				},
+				"code" : "veracodeUrl := 'https://api.veracode.com/appsec/v1/applications?name=Verademo'.\rzincClient := ZnClient new.\rjson := zincClient get:veracodeUrl."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-01-29T14:12:34.49257-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-02-05T17:31:29.992642-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "k24x1D7pDQCgMqpoDls4XQ=="
+				},
+				"code" : "\"HEADER_FORMAT := '' %s id=%s,ts=%s,nonce=%s,sig=%s\"\rts := DateAndTime now.\rhttpRequest := zincClient request.\rid := '2d14e7e56ff1b66bf7c23032e7b90d6e'.\rkey := 'c3b6b9e1103202d5b6a9485620034cdc521d6101f0c3b5982a0c5d0d29ef2049945f3729dd3b07139498852c5238371b8d6b411fe8e9e6b7bfe9380b0f703965'.\rhost := httpRequest uri host.\rpath := httpRequest uri path.\rmethod := httpRequest method.\rdata := 'id=', id, '&host=', host, '&url=/', path, '&method=', method.\r\rhmac := SHA256 new hmac.\rhmac key: aVeracodeRESTAPI key.\rkNonce := hmac digestMessage:(aVeracodeRESTAPI createNonce asUppercase).\rTranscript nextPut: kNonce asString; cr.\rhmac key:kNonce.\rkDate := hmac digestMessage: (DateAndTime now asString).\rhmac key: kDate.\rkSig := hmac digestMessage: 'vcode_request_version_1' asByteArray.\rhmac key:kSig.\rmessage := hmac digestMessage:data.\r\rhttpRequest setAuthorization: \r\t('VERACODE-HMAC-SHA-256 id=2d14e7e56ff1b66bf7c23032e7b90d6e,ts=' , \r\tts asUnixTime asString, ',nonce=', kNonce asString, ',sig=', kSig).\r\"httpRequest setAuthorization: 'VERACODE-HMAC-SHA-256 id=2d14e7e56ff1b66bf7c23032e7b90d6e,ts=1738791975410,nonce=3630433735383530353432413939343742464245343933454333364341423635,sig=5e54a5273d8f7e7139ba07c34b1934a35f19bc1bf237802e75ab65890456592b'.\"\rzincClient\r\"zincClient get.\""
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-01-29T14:10:58.41683-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-01-29T14:11:00.301288-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "lG53zj7pDQCfohA+Dls4XQ=="
+				},
+				"code" : "json get: veracodeUrl"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-01-29T13:55:35.900548-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-01-29T13:55:36.887721-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "zvJ6lz7pDQCfUSlbDls4XQ=="
+				},
+				"code" : "MyVeracodeRESTAPIRequest new url: aUrl."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-01-31T18:03:19.536607-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-02-03T14:44:24.381948-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "tskaSWrpDQCIVeyXDls4XQ=="
+				},
+				"code" : "MyVeracodeRESTAPIRequest new createNonce"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-01-31T13:25:11.002899-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-01-31T13:25:11.002899-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "svFjZmbpDQCvhXXcDls4XQ=="
+				},
+				"code" : "myRandom := Random new.\rmyRandom next."
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-01-31T16:29:52.770638-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-02-03T14:34:58.205409-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "ElLq+mjpDQC1UBU/Dls4XQ=="
+				},
+				"code" : "myByteArray := ByteArray new: 16.\rcounter := 1.\r(myByteArray size) timesRepeat:\r\t[\r\t\trand := (256 atRandom - 1).\r\t\tmyByteArray byteAt: counter put:rand.\r\t\tTranscript nextPut:'Counter is ',(counter asString),' Rand is ', (rand asString); \r\t\tcr.\r\t\tcounter := counter + 1. ].\rmyByteArray hex"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-01-31T18:07:21.338642-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-02-04T14:26:10.156277-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "ymSEV2rpDQCI8e/EDls4XQ=="
+				},
+				"code" : "aVeracodeRESTAPI := MyVeracodeRESTAPIRequest new.\raVeracodeRESTAPI url: 'https://api.veracode.com/appsec/v1/applications?name=Verademo'.\raVeracodeRESTAPI createNonce asUppercase.\raVeracodeRESTAPI id: '2d14e7e56ff1b66bf7c23032e7b90d6e'.\raVeracodeRESTAPI key: 'c3b6b9e1103202d5b6a9485620034cdc521d6101f0c3b5982a0c5d0d29ef2049945f3729dd3b07139498852c5238371b8d6b411fe8e9e6b7bfe9380b0f703965'.\raVeracodeRESTAPI"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-02-05T17:26:55.703342-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-02-05T17:26:55.703342-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "gAElXM7pDQCexAsCDls4XQ=="
+				},
+				"code" : "hmac := SHA256 new hmac.\rhmac key: aVeracodeRESTAPI key.\rkNonce := hmac digestMessage:(aVeracodeRESTAPI createNonce asUppercase).\r"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-02-05T17:26:04.943157-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-02-05T17:26:55.705818-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "bnUeWc7pDQCeq9uBDls4XQ=="
+				},
+				"code" : "hmac key:kNonce.\rkDate := hmac digestMessage: (DateAndTime now asString).\rhmac key: kDate.\rkSig := hmac digestMessage: 'vcode_request_version_1' asByteArray.\rhmac key:kSig.\rmessage := hmac digestMessage:data.\rdata"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-02-05T16:59:49.41696-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-02-05T17:17:38.030145-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "Tsk1+83pDQCYMDYGDls4XQ=="
+				},
+				"code" : "DateAndTime now asUnixTime"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-01-30T10:06:57.526552-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-01-31T17:24:59.745756-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "4Iqkg0/pDQCkgISCDls4XQ=="
+				},
+				"code" : ""
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-01-29T13:54:35.987128-05:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-01-29T13:54:35.987128-05:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Veracode REST API"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "b7534993-3ee9-0d00-9f1c-26b20e5b385d"
+	}
+}

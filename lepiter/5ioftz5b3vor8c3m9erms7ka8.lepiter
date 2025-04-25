@@ -1,0 +1,181 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-01-28T15:44:37.872517-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-01-28T16:27:39.089762-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "rCeS/yvpDQCDNCW4Dls4XQ=="
+				},
+				"code" : "asts := (PythonParser sourceFilesIn: '/Users/tfahey/tools/veracode-mitigation-copier' asFileReference) collect: [:each |\r\t(PythonParser parseWithErrors: each contents)\r\t\tfilename: each pathString;\r\t\tyourself]"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-01-28T16:02:39.358062-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-01-28T17:23:07.074652-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "2EwIQCzpDQCG/YSIDls4XQ=="
+				},
+				"code" : "pyFile := '/Users/tfahey/tools/veracode-mitigation-copier/MitigationCopier.py' asFileReference.\r\rpyNode := (PythonParser parseWithErrors: pyFile contents)\r\tfilename: pyFile pathString;\r\tyourself.\r\r(pyNode isKindOf: PyFunctionDefinitionNode) ifTrue: [pyNode statements] ifFalse: ['PyNode is not a function definition'].\rfunctions := pyNode statements select: [:aPyNode | aPyNode isKindOf: PyFunctionDefinitionNode].\rfunctions collect: [:func | func fname]"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-01-28T15:44:22.604442-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-01-28T15:44:22.604442-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "zS6p/ivpDQCDM6kuDls4XQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-01-28T15:44:11.40457-05:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-01-28T15:44:11.40457-05:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "XUn+/SvpDQCDMko8Dls4XQ=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-01-28T15:44:22.600829-05:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-01-28T15:44:22.600829-05:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Python Analysis"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "7046fcfd-2be9-0d00-8331-e5b20e5b385d"
+	}
+}

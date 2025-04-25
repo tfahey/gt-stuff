@@ -1,0 +1,323 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-25T09:25:41.257309-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-25T09:25:41.263087-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "MEYj9vvvDQC00fQzDP0wvA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#Getting started – authentication"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-25T09:22:49.580125-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-25T09:25:07.521023-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "1FG/9/vvDQC1HP59DP0wvA=="
+				},
+				"code" : "vrmAccessKeyFile := FileLocator home / '.veracode' / 'vrm_api_key'.\rvrmAccessKey := vrmAccessKeyFile contents trimBoth"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-25T09:26:07.712151-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-25T09:26:09.082477-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "zpOOA/zvDQC11JoZDP0wvA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "#From schema to local model"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-25T09:26:43.601775-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-25T09:26:51.108114-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "lzSyBfzvDQC15o/gDP0wvA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Download VRM’s GraphQL schema and then construct a local model of it that we’ll store in a context variable:"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-25T09:26:13.485032-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-25T09:31:54.062969-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "76TmA/zvDQC13epMDP0wvA=="
+				},
+				"code" : "aContext := GtGQLContext new\r\t\turl: 'https://app.longbow.security/graphql';\r\t\tbearerToken: vrmAccessKey;\r\t\tbuildSchema"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-25T09:44:10.726053-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-25T09:44:22.004306-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "jA4cRPzvDQC2yJvJDP0wvA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Telling GT about my ssh credentials"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-25T09:46:06.172918-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-25T09:46:25.579202-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "3Z39SvzvDQC3o3zPDP0wvA=="
+				},
+				"code" : "FileLocator home / '.ssh'"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-25T09:44:40.248853-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2025-04-25T10:32:17.361692-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "9oneRfzvDQC3mYdGDP0wvA=="
+				},
+				"code" : "| credentials store |\rcredentials := IceSshCredentials new\r\thost:  #'github.com';\r\tusername: 'tfahey';\r\tpublicKey: (FileLocator home / '.ssh/id_ed25519.pub') pathString;\r\tprivateKey: (FileLocator home / '.ssh/id_ed25519') pathString;\r\t\"keyPassphrase: 'rsa passphrase';\" \"Stored in plain text on disk\"\r\t\"You can also use 'Clipboard clipboardText asString' to get it from the clipboard\"\r\tyourself.\rstore := IceCredentialStore current.\rstore storeSshCredential: credentials forHostname: credentials host.\rIceCredentialsProvider useCustomSsh: true."
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-04-25T09:24:26.033495-04:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2025-04-25T09:24:26.033495-04:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "VRM GraphQL Examples"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "fa4323f6-fbef-0d00-b4d0-74d30cfd30bc"
+	}
+}
