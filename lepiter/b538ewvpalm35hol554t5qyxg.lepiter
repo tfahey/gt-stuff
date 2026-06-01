@@ -39,6 +39,40 @@
 				"code" : "HelloWorld new hello"
 			},
 			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-06-01T09:59:26.034016-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-06-01T09:59:28.339042-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "R15lorqHQFecDvi/r5/MUw=="
+				},
+				"code" : "thisSnippet database monitor localRoot"
+			},
+			{
 				"__type" : "textSnippet",
 				"children" : {
 					"__type" : "snippets",
