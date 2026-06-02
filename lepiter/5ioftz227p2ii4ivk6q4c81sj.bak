@@ -29,14 +29,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2026-06-01T13:24:39.385045-04:00"
+						"dateAndTimeString" : "2026-06-01T15:09:10.890876-04:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "OgHQmuHpDQCiGBR3Dls4XQ=="
 				},
-				"code" : "Object new _"
+				"code" : "aVeracodeRESTAPI := MyPackageExamples new getMyVeracodeRESTAPI.\raVeracodeRESTAPI createNonce"
 			},
 			{
 				"__type" : "pharoSnippet",
@@ -71,6 +71,111 @@
 					"uidString" : "pfjQvN/pDQCfq/VrDls4XQ=="
 				},
 				"code" : "aVeracodeHMAC := MyVeracodeHMAC new.\raVeracodeHMAC createAuthParamFor: aVeracodeRESTAPI."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-06-02T10:07:14.31649-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-06-02T10:07:28.209933-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "+14EyFUfRpmxYYW+2+8cZg=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Receiving an error:\n\n{\"error\":\"Unauthorized: AuthenticationException\",\"error_description\":\"Signature could not be validated because Invalid signature using API ID 707876082235e2343cd3dbe2aad6d86c, HMAC ts 1780353061420\",\"message\":\"9384aa42-7852-4328-bccc-307638bca216\",\"http_code\":401,\"http_status\":\"Unauthorized: \"}"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-06-02T10:26:14.128933-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-06-02T10:27:29.241709-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "y9//A0aQSOyjmGQ9Je8akw=="
+				},
+				"code" : "MyPackageExamples new getVerademoRestApiResponse"
+			},
+			{
+				"__type" : "pharoSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-06-02T15:57:08.186493-04:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2026-06-02T15:58:31.753259-04:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "r0nXCm2mRTOl3fNvZGi3fQ=="
+				},
+				"code" : "\"Create a credentials dictionary from my Veracode credentials\"\rcredentialsDict := MyPackageExamples getMyApiCredentialsDictionary.\rid := credentialsDict at: 'veracode_api_key_id'.\rkey := credentialsDict at: 'veracode_api_key_secret'.\raVeracodeRESTAPI := MyPackageExamples new getMyVeracodeRESTAPI.\rMyPackageExamples new createExampleHmacMessageForKey: aKey."
 			}
 		]
 	},
